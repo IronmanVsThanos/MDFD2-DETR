@@ -4,6 +4,12 @@
 
 
 Install
+
+
+
 pip install -r requirements.txt
+
+
+
 train
 python tools/train.py -c configs/mdfd2-detr/mdfd2-detr_r18vd_6x_coco.yml
