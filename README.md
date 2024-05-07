@@ -20,14 +20,14 @@ recommend
           os:linux
           torch >=2.0.0
           torchvision>=0.15.2
-
+```python  
 pip install -r requirements.txt
-
+```
 
 ------------------------
 train
 ------------------------
 
-
-
+```python  
 python tools/train.py -c configs/mdfd2-detr/mdfd2-detr_r18vd_6x_coco.yml
+```
