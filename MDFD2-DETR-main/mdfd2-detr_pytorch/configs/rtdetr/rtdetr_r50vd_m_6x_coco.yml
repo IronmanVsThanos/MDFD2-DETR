@@ -1,0 +1,17 @@
+__include__: [
+  '../dataset/coco_detection.yml',
+  '../runtime.yml',
+  './include/dataloader.yml',
+  './include/optimizer.yml',
+  './include/rtdetr_r50vd.yml',
+]
+
+output_dir: ./output/rtdetr_r50vd_m_6x_Udacity_original
+
+
+# 相比于rtdetr_r50vd_6x_coco.yml 多的参数
+HybridEncoder:
+  expansion: 0.5
+
+RTDETRTransformer:
+  eval_idx: 2 # use 3th decoder layer to eval

@@ -1,0 +1,36 @@
+task: detection
+
+num_classes: 20
+remap_mscoco_category: True
+
+train_dataloader:
+  type: DataLoader
+  dataset:
+    type: CocoDetection
+    img_folder: /mnt/sda1/Deep_learning/datasets/VOC2012/images/train2012
+    ann_file: /mnt/sda1/Deep_learning/datasets/VOC2012/annotations/instances_tain2017.json
+
+    transforms:
+      type: Compose
+      ops: ~
+  shuffle: True
+  batch_size: 32
+  num_workers: 8
+  drop_last: True
+
+
+val_dataloader:
+  type: DataLoader
+  dataset:
+    type: CocoDetection
+
+    img_folder: /mnt/sda1/Deep_learning/datasets/VOC2012/images/val2012
+    ann_file: /mnt/sda1/Deep_learning/datasets/VOC2012/annotations/instances_val2017.json
+    transforms:
+      type: Compose
+      ops: ~
+
+  shuffle: False
+  batch_size: 32
+  num_workers: 8
+  drop_last: False
