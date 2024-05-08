@@ -16,7 +16,7 @@
 ------------------------
 Install
 ------------------------
-* recommend 
+* recommend * 
    
 os:linux (windows is not test)
 torch >=2.0.0
