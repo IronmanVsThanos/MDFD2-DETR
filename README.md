@@ -16,11 +16,11 @@
 ------------------------
 Install
 ------------------------
-* recommend * 
+* recommend 
    
-os:linux (windows is not test)
-torch >=2.0.0
-torchvision>=0.15.2
+   os:linux (windows is not test)
+   torch >=2.0.0
+   torchvision>=0.15.2
 ```python  
 pip install -r requirements.txt
 ```
